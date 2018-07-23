@@ -1,23 +1,26 @@
 package sample;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Main extends Application {
+public class Main{
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
+    private static Student student = new Student(1, "John", "Smith", "John1989@gmail.com", 20, new int[] {88,79,59});
 
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args){
+//
+
+
+
+
+//        print_all();
+//        print_invalid_emails();
+//        //loop through teh ArrayList and for each element:
+//        print_average_grade(current_loop_student);
+//        remove("3");
+//        remove("3");
+        //expected: this should print a message saying such a student with this ID was not found.
+
     }
 }
