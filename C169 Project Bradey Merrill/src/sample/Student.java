@@ -1,10 +1,9 @@
 package sample;
 
-import java.util.ArrayList;
 
 public class Student {
 
-    private int studentId;
+    private String studentId;
     private String firstName;
     private String lastName;
     private String eMail;
@@ -12,64 +11,73 @@ public class Student {
     private int[] grades;
 
 
-    public Student(int studentId, String firstName, String lastName, String eMail, int age, int[] grades) {
-        this.studentId = studentId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.eMail = eMail;
-        this.age = age;
-        this.grades = grades;
+    //Constructor
+    public Student(String studentId, String firstName, String lastName, String eMail, int age, int[] grades) {
+        setStudentId(studentId);
+        setFirstName(firstName);
+        setLastName(lastName);
+        seteMail(eMail);
+        setAge(age);
+        setGrades(grades);
     }
 
-    public String print(String printString){
-        return printString;
-    }
-
-    public int getStudentId() {
+    //Getters
+    public String getStudentId() {
         return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getLastName() {
         return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String geteMail() {
         return eMail;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
-    }
-
     public int getAge() {
         return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public int[] getGrades() {
         return grades;
     }
 
+    //Setters
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void seteMail(String eMail) {
+        this.eMail = eMail;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void setGrades(int[] grades) {
         this.grades = grades;
     }
+
+    //Methods
+    public void print(){
+        System.out.println("StudentID:\t" + getStudentId()+
+                            "\tFirst Name:\t" + getFirstName()+
+                            "\tLast Name:\t" + getLastName()+
+                            "\tE-mail:\t" + geteMail()+
+                            "\tAge:\t" + getAge());
+    }
+
 }

@@ -23,53 +23,53 @@ public class Student {
         this.grades = grades;
     }
 
+    //getters
+
     public int getStudentID() {
         return StudentID;
     }
-
-    public void setStudentID(int studentId) {
-        StudentID = studentId;
-    }
-
     public String getFirstName() {
         return firstName;
     }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getLastName() {
         return lastName;
     }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getEmail() {
         return email;
     }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public int getAge() {
         return age;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public int[] getGrades() {
         return grades;
     }
 
+
+    //setters
+
+    public void setStudentID(int studentId) {
+        StudentID = studentId;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
     public void setGrades(int[] grades) {
         this.grades = grades;
     }
+
+//    public static Student createStudent(int studentID, String firstName, String lastName, String email, int age, int[] grades){
+//        return new Student(studentID, firstName, lastName, email, age, grades);
+//    }
+
 
     public void print(){
 
