@@ -23,7 +23,7 @@ public class Main{
         Roster.print_average_grade("2");
 
         //Calling remove from Roster
-        Roster.remove("2");
+        Roster.remove("4");
 //        Roster.remove("3");
 
 
